@@ -6,13 +6,15 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo"  href="index.html">
-        <img src="logo.png" width="140" height="70" alt="Логотип Седона">
-          </a>
+      <nav class="main-navigation">        
         <ul class="site-navigation">
           <li><a href="info-navigation">Информация</a></li>
           <li><a href="gallery-navigation">Фото и видео</a></li>
+          <li>
+            <a class="main-header-logo"  href="index.html">
+            <img src="logo.png" width="140" height="70" alt="Логотип Седона">
+            </a>
+          </li>
           <li><a href="map-navigation">Карта штата</a></li>
           <li class="site-navigation-current"><a href="hotels-navigation">Гостиницы</a></li>
         </ul>
@@ -20,8 +22,39 @@
     </header>
     <main class="container">
       <h1 class="visual-hidden">Поиск отеля в Седоне</h1>
-      <section>
+      <section class="catalog">
          <h2 Class="visual-hidden">Список отелей</h2>
+         <div class="catalog-item">
+          <div class="catalog-image"></div>
+          <div class="hotel-description">
+            <h3>
+              <a href="catalog-item.html">Amara Resort & Spa</a>
+            </h3>
+            <span class="description">Гостиница</span> 
+            <span class="cost">от 4000 р.</span>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">Забронировать</a>
+          </div>
+        </div>
+        <div class="hotel-rating">
+          <ul class="star">
+            <li>
+            <img src="star.png" width="20" height="20" alt="Звезда">
+            </li>
+            <li>
+            <img src="star.png" width="20" height="20" alt="Звезда">
+            </li>
+            <li>
+            <img src="star.png" width="20" height="20" alt="Звезда">
+            </li>
+            <li>
+            <img src="star.png" width="20" height="20" alt="Звезда">
+            </li>
+          </ul>
+          <span class="rating">Рейтинг: 8,5</span>
+        </div>
+      </section>
+         <!--- оставлю пока что 
          <ul class="hotels-list">
           <li class="catalog-item">
             <h3>
@@ -38,8 +71,6 @@
             <a class="button" href="#">Забронировать</a>
             <p class="rating">Рейтинг: 8,5</p>
           </li>
-        </ul>
-        <ul class="hotels-list">
           <li class="catalog-item">
             <h3>
               <a href="catalog-item.html">Desert Quail Inn</a>
@@ -55,8 +86,6 @@
             <a class="button" href="#">Забронировать</a>
             <p class="rating">Рейтинг: 8,9</p>
           </li>
-        </ul>
-        <ul class="hotels-list">
           <li class="catalog-item">
             <h3>
               <a href="catalog-item.html">Villas at Poco Diablo</a>
@@ -73,20 +102,24 @@
             <p class="rating">Рейтинг: 9,2</p>
           </li>
         </ul>
-      </section>      
+      </section>  
+      --->    
     </main>
     <footer class="main-footer">
-      <p class="footer-teg">#visitsedona</p>
+      <span class="footer-teg">#visitsedona</span>
       <div class="foter-social">
         <ul>
-          <li>Твиттер</li>
-          <li>Фейсбук</li>
-          <li>Ютуб</li>
+          <li><a href="https://twitter.com"><img src="twitter.png" width="45" height="45" alt="Twitter"></a></li>
+          <li><a href="https://ru-ru.facebook.com/"><img src="facebook.png" width="45" height="45" alt="facebook"></a></li>
+          <li><a href="https://www.youtube.com"><img src="youtube.png" width="45" height="45" alt="youtube"></a></li>
         </ul>
-        <p class="footer-copiraght">
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        </p>
       </div>
+        <div>
+          <span class="footer-copiraght">Website by</span>
+            <a class="footer-copiraght-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="html-logo.png" width="120" height="40" alt="HTML Academy">HTML Academy
+            </a>
+        </div>
     </footer>
   </body>
 </html>
