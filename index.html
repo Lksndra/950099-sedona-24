@@ -37,7 +37,19 @@
            </p>
         <span class="hotel-searsh">Поиск гостиницы в Седоне
         </span>
-        <!-- форма --> 
+        <form class="hotels-search method="get" action="https://echo.htmlacademy.ru">
+          <label for="date-in">Дата заезда:</label>
+          <input type="date" name="date-in" id="date-ie"><br>
+          <label for="date-out">Дата выезда:</label>
+          <input type="date" name="date-out" id="date-out"><br>
+          <label for="adults">Взрослые:</label>
+          <input type="number" min="0" max="10" id="adults">
+          <label for="children">Дети:</label>
+          <input type="number" min="0" max="10" id="children">
+          <div class="buttons">
+            <input type="submit" value="Найти">
+          </div>
+        </form>
   	</section>			
   	</main>
   	<footer class="main-footer">
